@@ -1,0 +1,8 @@
+#dockerについて
+https://qiita.com/jhorikawa_err/items/fb9c03c0982c29c5b6d5
+#fastapiについて
+https://rightcode.co.jp/blog/information-technology/fastapi-tutorial-todo-apps-environment
+# fastspi画像のマウント
+https://qiita.com/rubberduck/items/3734057d92a5ee7a2e83
+# docker 再起動
+# docker-compose build && docker-compose up -d
