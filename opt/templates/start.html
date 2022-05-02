@@ -1,7 +1,10 @@
 {% extends "layout.html" %}
 {% block content %}
 <br>
+<script type="text/javascript" src="../static/js/start.js">
+</script>
+<button onclick="changeImage()">画像の切替</button>
 <div>
-  <img src="../static/image/1.jpeg" width='256' height='256'>
+  <img src="../static/image/1.jpeg" id="orange" width='256' height='256'>
 </div>
 {% endblock %}
