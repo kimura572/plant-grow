@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from starlette.requests import Request
 from starlette.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
+import img
 
 app = FastAPI(
     title='FastAPIでつくるtoDoアプリケーション',
@@ -25,7 +26,13 @@ def admin(request: Request):
                                       'username': 'admin'})
 
 def start(request: Request):
-    num = 2
+    nume = img.randomer()
     return templates.TemplateResponse('start.html',
                                      {'request': request,
-                                      'num': num})
+                                      'num': nume})
+
+def new(request: Request):
+    nume = img.randomer()
+    return templates.TemplateResponse('start.html',
+                                     {'request': request,
+                                      'num': nume})

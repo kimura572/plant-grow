@@ -1,4 +1,4 @@
-var img_src = new Array('../static/image/1.jpeg','../static/image/2.jpeg','../static/image/3.gif',);
+var img_src = new Array('../static/image/hutuu.Gif','../static/image/genki.Gif','../static/image/dame.Gif',);
 var i = 0;
 
 
