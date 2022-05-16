@@ -18,6 +18,9 @@ RUN python -m pip install jupyterlab
 RUN python -m pip install SpeechRecognition
 RUN apt-get update
 RUN apt-get install libasound-dev libportaudio2 libportaudiocpp0 portaudio19-dev -y
-RUN pip install pyaudio
+RUN python -m pip install pyaudio
 RUN python -m pip install fastapi
 RUN python -m pip install sqlalchemy uvicorn
+RUN python -m pip install SpeechRecognition
+RUN python -m pip install asari
+RUN python -m pip install Janome==0.3.7

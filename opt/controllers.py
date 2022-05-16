@@ -29,10 +29,12 @@ def start(request: Request):
     nume = img.randomer()
     return templates.TemplateResponse('start.html',
                                      {'request': request,
-                                      'num': nume})
-
-def new(request: Request):
-    nume = img.randomer()
+                                      'position': nume})
+                                    
+def tr(request: Request):
+    text, posinega,hiryo = img.mimi()
     return templates.TemplateResponse('start.html',
                                      {'request': request,
-                                      'num': nume})
+                                      'text': text,
+                                      'posinega':posinega,
+                                      'hiryo':hiryo})

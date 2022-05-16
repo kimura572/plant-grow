@@ -5,3 +5,7 @@ div#i {
 p {
   color: aqua;
 }
+
+div#btn {
+  text-align: center;
+}
