@@ -25,7 +25,6 @@ function changeImage(vars) {
   document.getElementById('edit_area').innerHTML = '元気度：'+String(i);
 };
 
-function myFunc(vars) {
-  alert(vars);
+function myFunc() {
   location.reload();
 }

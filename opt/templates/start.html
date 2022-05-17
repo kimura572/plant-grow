@@ -1,27 +1,35 @@
 {% extends "layout.html" %}
 {% block content %}
 <br>
-
 <script type="text/javascript">
     l = {{hiryo}};
 </script>
 <script type="text/javascript" src="../static/js/start.js">
 </script>
-
-<p>メッセージ：{{text}}</p>
-<p>ポジネガ：{{posinega}}</p>
-<p>肥料値：{{hiryo}}</p>
+<table>
+  <tr>
+  <th>メッセージ</th>
+    <td>{{text}}</td>
+  </tr>
+  <tr>
+    <th>ポジネガ</th>
+      <td>{{posinega}}</td>
+  </tr>
+  <tr>
+  <th>肥料値</th>
+    <td>{{hiryo}}</td>
+  </tr>
+</table>
 <div id="edit_area"></div>
 <link rel="stylesheet" href="../static/css/start.css">
 <body onload="changeImage(l)"></body>
+<br>
+<br>
+<br>
 <div id="i">
   <img src="../static/image/hutuu.GIF" id="orange" width='256' height='256'>
 </div>
-<div id="i">
+<div class="button_solid017">
   <button onclick="myFunc(l)">元気をあげる</button>
 </div>
-<p href="http://127.0.0.1:8000/start">◯◯</p>
-<p>
-  aioue
-</p>
 {% endblock %}

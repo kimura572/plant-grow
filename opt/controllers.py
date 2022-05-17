@@ -25,9 +25,9 @@ def admin(request: Request):
                                      {'request': request,
                                       'username': 'admin'})
 
-def start(request: Request):
-    nume = img.randomer()
-    return templates.TemplateResponse('start.html',
+def home(request: Request):
+    nume = 0
+    return templates.TemplateResponse('home.html',
                                      {'request': request,
                                       'position': nume})
                                     
