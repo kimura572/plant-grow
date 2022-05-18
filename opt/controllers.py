@@ -25,14 +25,16 @@ def admin(request: Request):
                                      {'request': request,
                                       'username': 'admin'})
 
-def start(request: Request):
-    nume = img.randomer()
+def home(request: Request):
+    nume = 0
+    return templates.TemplateResponse('home.html',
+                                     {'request': request,
+                                      'position': nume})
+                                    
+def tr(request: Request):
+    text, posinega,hiryo = img.mimi()
     return templates.TemplateResponse('start.html',
                                      {'request': request,
-                                      'num': nume})
-
-def new(request: Request):
-    nume = img.randomer()
-    return templates.TemplateResponse('start.html',
-                                     {'request': request,
-                                      'num': nume})
+                                      'text': text,
+                                      'posinega':posinega,
+                                      'hiryo':hiryo})

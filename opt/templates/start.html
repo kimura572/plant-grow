@@ -1,17 +1,39 @@
 {% extends "layout.html" %}
 {% block content %}
 <br>
+<script type="text/javascript">
+    l = {{hiryo}};
+</script>
 <script type="text/javascript" src="../static/js/start.js">
 </script>
-<a>{{num}}</a>
+<table>
+  <tr>
+  <th>メッセージ</th>
+    <td>{{text}}</td>
+  </tr>
+  <tr>
+    <th>ポジネガ</th>
+      <td>{{posinega}}</td>
+  </tr>
+  <tr>
+  <th>肥料値</th>
+    <td>{{hiryo}}</td>
+  </tr>
+  <tr>
+  <th>元気度</th>
+    <td id="edit_area"></td>
+  </tr>
+</table>
+<div id="edit_area"></div>
 <link rel="stylesheet" href="../static/css/start.css">
-<button onclick="changeImage()">画像の切替</button>
-<button onclick="changeImage()">数字</button>
+<body onload="changeImage(l)"></body>
+<br>
+<br>
+<br>
 <div id="i">
   <img src="../static/image/hutuu.GIF" id="orange" width='256' height='256'>
 </div>
-<a href="http://127.0.0.1:8000/s">◯◯</a>
-<p>
-  aioue
-</p>
+<div class="button_solid017">
+  <button onclick="myFunc(l)">元気をあげる</button>
+</div>
 {% endblock %}

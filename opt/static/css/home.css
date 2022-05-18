@@ -2,35 +2,7 @@ div#i {
   text-align: center;
 }
 
-div#btn {
-  text-align: center;
-}
-
-table{
-  border-collapse:separate;
-  border-spacing: 5px;
-  width: 100%;
-}
-
-table th,table td{
-  border-radius: 5px;
-  text-align: center;
-  padding: 10px 0;
-}
-
-table th{
-  background-color: #c79852;
-  color: white;
-  border:solid 1px #927141;
-}
-
-table td{
-  background-color: #e4d4bc;
-  border:solid 1px #af9d85;
-}
-
-
-.button_solid017 button {
+.button_solid017 a {
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -46,13 +18,13 @@ table td{
   border: 0.2rem solid #543618;
   box-shadow: 0.2rem 0.2rem 0px 0.1rem #cccccc;
 }
-.button_solid017 button:hover {
+.button_solid017 a:hover {
 transform: translate3d(0.2rem, 0.2rem, 0);
 box-shadow: none;
 opacity: 1;
 transition: all 0.2s;
 }
-.button_solid017 button:after {
+.button_solid017 a:after {
   content: '';
   width: 5px;
   height: 5px;
