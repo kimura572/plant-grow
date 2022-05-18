@@ -24,3 +24,32 @@ body {
     background-position: left 30% bottom 22px, left -1632px bottom 0px, left -1016px bottom 22px, left -512px bottom 0px;
   }
 }
+
+#btn{
+  width: 209px;
+  transition: all .2s;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  padding:0.6em;
+  font:120% bold;
+  background:
+  radial-gradient(farthest-side circle at 100% 74%,#c7593d 24%,#c7593d00 25%) 0px 0px/44px 44px
+  ,radial-gradient(closest-side circle at 50% 23%,#c7593d 99%,#c7593d00 100%) 0px 0px/44px 44px
+  ,linear-gradient(90deg,#c7593d00 20px,#cccccc 21px 22px) 0px 0px/22px 22px
+  ,linear-gradient(#c7593d 20px,#cccccc 21px 22px) 0px 0px/22px 22px;
+}
+
+#btn:hover{
+  transform: scale(1.1, 1.1);
+}
+
+#start {
+  color: black;
+  display: block;
+  text-align: center;
+}
+
+#title {
+  text-align: center;
+}

@@ -22,7 +22,7 @@ function changeImage(vars) {
   }
   img.src = img_src[num];
   localStorage.setItem('key', i);
-  document.getElementById('edit_area').innerHTML = '元気度：'+String(i);
+  document.getElementById('edit_area').innerHTML = i.toPrecision(3);
 };
 
 function myFunc() {
