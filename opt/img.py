@@ -17,5 +17,5 @@ from asari.api import Sonar
 #   return query, res['top_class'], hiryo
 
 def mimi():
-  query,res,hiryo=1,2,3
+  query,res,hiryo=1,2,-1
   return query, res, hiryo

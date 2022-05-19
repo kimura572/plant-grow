@@ -53,3 +53,35 @@ body {
 #title {
   text-align: center;
 }
+
+h1 {
+  line-height: 60px;
+  position: relative;
+  height: 60px;
+  padding: 0 2rem;
+  text-align: center;
+  color: #fff;
+  background: #fa4141;
+}
+
+h1:before,
+h1:after {
+  position: absolute;
+  top: 0;
+  display: block;
+  height: 48px;
+  content: '';
+  border: 30px solid #fa4141;
+}
+
+h1:before {
+  left: -40px;
+  border-left-width: 15px;
+  border-left-color: transparent;
+}
+
+h1:after {
+  right: -40px;
+  border-right-width: 15px;
+  border-right-color: transparent;
+}

@@ -1,6 +1,6 @@
 var img_src = new Array('../static/image/hutuu.Gif','../static/image/genki.Gif','../static/image/dame.Gif',);
 var i = Number(0);
-// localStorage.clear(); 
+localStorage.clear(); 
 let data = localStorage.getItem('key');
 if (data) {
   var i = Number(data);
